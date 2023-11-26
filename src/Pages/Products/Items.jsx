@@ -2,23 +2,29 @@ import React, { useContext } from 'react'
 import { ProductContext } from "../../Context/Product-Context";
 import { FiShoppingCart } from "react-icons/fi"
 import { LuHeart } from "react-icons/lu";
-import './Styles.css'
+import { Link } from 'react-router-dom';
+import './Products.css'
+import { SeeMore } from '../SeeMore/SeeMore';
 
 
 export const Items = (props) => {
 
-    const{id, name, category, image} = props.data;
-    const {addToCart, cartItems, addToWishList, wishItems} = useContext(ProductContext)
+    const{id, name, category, image, price} = props.data;
+    const {addToCart, cartItems, addToWishList, wishItems,seeMore} = useContext(ProductContext)
     const cartAmount = cartItems[id]
 
   return  <div className='items'>
             <div className='items-display'>
-            <p>{category}</p>
+            <div className='category-container'>
+            <p className='category'>{category}</p>
+            </div>
             <img src={image} />
-            <h4>{name}</h4>
+            <p className='name'>{name}</p>
+            <p className='price'>₱{price}</p>
+            
             </div>
             <div className='hidden-buttons'>
-          <button className='viewmore btns'>View More</button>
+          <Link to='/seemore'><button className='viewmore btns' onClick={() => seeMore(id)}>View More</button></Link>
           <button className='add-to-cart btns' onClick={()=> addToCart(id)}><FiShoppingCart /></button>
           <button
             className="add-to-wish-list btns"

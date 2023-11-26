@@ -1,0 +1,39 @@
+HERO PAGE SAVED PAGE
+
+No CSS files!
+import '../css/Hero1.css'
+import '../css/Hero2.css'
+import '../css/BestSeller.css'
+import '../css/HowItWorks.css'
+import '../css/Testimony.css'
+
+
+
+Search bar filter Code
+
+<div className="search-container">
+        <div className="input-container">
+          <input id="searchInput" type="text" placeholder="Search Keyboard..." onChange={(e) => {
+            setSearchTerm(e.target.value);
+          }} />
+        </div>
+
+/*
+        const [Search, setSearch] = useState("");
+        <div className='items-container'>
+        {PRODUCTS
+        .filter((item) => {
+        if (Search == ""){
+        return item;
+        } else if (item.name.toLowerCase().includes(Search.toLocaleLowerCase())||
+        item.category.toLowerCase().includes(Search.toLocaleLowerCase())){
+            return item; 
+        }
+    })
+        .map((product) => (
+        <Items data={product} />
+    ))}
+        </div>
+
+
+    // Need ma restart ang cart and wishlist para mapa gana ang filtered products

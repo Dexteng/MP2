@@ -4,6 +4,7 @@ import { ProductContext } from "../../Context/Product-Context";
 import { CartItem } from "./Cart-Item";
 import { useNavigate } from 'react-router-dom';
 import { TbMoodEmpty } from "react-icons/tb";
+import Footer from '../../Components/Footer';
 
 
 
@@ -29,8 +30,9 @@ export const Cart = () => {
           <button onClick={() => navigate("/products")}>Continue Shopping</button>
           <button>Checkout</button>
         </div>
-        :<h1>Your Cart is Empty{<TbMoodEmpty/>}</h1>}
+        :<h1 className=''>Your Cart is Empty{<TbMoodEmpty/>}</h1>}
       </div>
+      <Footer/>
     </div>
   )
 }
