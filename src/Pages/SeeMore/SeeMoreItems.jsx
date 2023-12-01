@@ -16,7 +16,8 @@ export const SeeMoreItems = (props) => {
         image,
         price
       } = props.data;
-    const { seeMore } = useContext(ProductContext)
+    const { seeMore,addToCart, cartItems, addToWishList } = useContext(ProductContext)
+    const cartAmount = cartItems[id]
   return ( 
     <div className='seemore-container'>
         <p>{heroImg}</p>
@@ -24,6 +25,12 @@ export const SeeMoreItems = (props) => {
         <img src={image} />
         <p>{name}</p>
         <p>{price}</p>
+        <button className='add-to-cart btns' onClick={()=> addToCart(id)}>Add to Cart{cartAmount > 0 && <><p className='cart-amount'>{cartAmount}</p></>}</button>
+        <button
+            className="add-to-wish-list btns"
+            onClick={() => addToWishList(id)}
+          >Add to WishList
+          </button>
         <div className='description'>
             <p>{description1}</p>
             <p>{description1Img}</p>

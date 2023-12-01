@@ -198,6 +198,19 @@
   transition: .4s ease-in-out;
   cursor: pointer;
   opacity: 00;
+  position: relative;
+}
+.items .add-to-cart .cart-amount {
+background-color: red;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+width: 18px;
+height: 18px;
+display: flex;
+position: absolute;
+top: 50%;
+right: 0;
 }
 
 .items .add-to-wish-list {
@@ -213,10 +226,6 @@
   cursor: pointer;
   opacity: 0;
 }
-
-
-
-
 
 .items svg{
   width: 30px;
@@ -243,4 +252,5 @@
 .items .add-to-wish-list:hover {
   color: yellow;
   scale: 1.2;
+  
 }

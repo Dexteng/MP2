@@ -3,13 +3,13 @@ import './Products.css'
 import prodHero from '../../assets/ProductPage/prodHero.jpg'
 import Footer from '../../Components/Footer.jsx';
 import { Items } from './Items.jsx';
-import FilteredProduct from './FilteredProduct.jsx';
 import { PRODUCTS } from '../../assets/ProductPage/Products.js';
 
 export const Products = () => {
     const [Search, setSearch] = useState("");
   return (      
     <div className='products'>
+      <div>
         <div className='prod-hero-container'>
         <img src={prodHero} alt="prod hero img" />
             <div className='text-container'>
@@ -34,15 +34,14 @@ export const Products = () => {
         } else if (item.name.toLowerCase().includes(Search.toLocaleLowerCase())||
         item.category.toLowerCase().includes(Search.toLocaleLowerCase())){
             return item; 
-        }
+        } 
     })
         .map((product) => (
         <Items data={product} />
     ))}
         </div>
         <Footer/>
+        </div>
     </div>
-
-  
   );
 }

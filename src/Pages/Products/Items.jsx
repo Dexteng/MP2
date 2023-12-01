@@ -25,7 +25,7 @@ export const Items = (props) => {
             </div>
             <div className='hidden-buttons'>
           <Link to='/seemore'><button className='viewmore btns' onClick={() => seeMore(id)}>View More</button></Link>
-          <button className='add-to-cart btns' onClick={()=> addToCart(id)}><FiShoppingCart /></button>
+          <button className='add-to-cart btns' onClick={()=> addToCart(id)}><FiShoppingCart />{cartAmount > 0 && <><p className='cart-amount'>{cartAmount}</p></>}</button>
           <button
             className="add-to-wish-list btns"
             onClick={() => addToWishList(id)}

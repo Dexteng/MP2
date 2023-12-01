@@ -56,6 +56,16 @@ export const ProductContextProvider = (props) => {
         }
         return totalAmount;
     }
+    const getTotalCheckoutPrice = () => {
+        let checkoutPrice = 0;
+        for (const item in cartItems) {
+            if (cartItems[item] > 0 ) {
+                let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
+                checkoutPrice += cartItems[item] * itemInfo.price + 13;
+            }
+        }
+        return checkoutPrice;
+    }
 
     const addToWishList = (itemId) => {
         setWishItems((prev) => ({...prev, [itemId]: !prev[itemId]}));
@@ -86,7 +96,7 @@ export const ProductContextProvider = (props) => {
     }
 
 
-    const contextValue = {cartItems, addToCart, removeFromCart, updateCartAmount, addToWishList, wishItems,getTotalCartAmount,getTotalWishList,seeItems, seeMore,getTotalProductAmount}
+    const contextValue = {cartItems, addToCart, removeFromCart, updateCartAmount, addToWishList, wishItems,getTotalCartAmount,getTotalWishList,seeItems, seeMore,getTotalProductAmount,getTotalCheckoutPrice}
 
 
     

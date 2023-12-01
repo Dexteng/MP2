@@ -37,3 +37,35 @@ Search bar filter Code
 
 
     // Need ma restart ang cart and wishlist para mapa gana ang filtered products
+
+
+    <div className='cartTab'>
+      <h1 className='title'>Shopping Cart</h1>
+      <div className="listCart">
+        <div className='cart-button'>
+          <button className='close-btn'>Close</button>
+          <button className='checkout-btn'>CheckOut</button>
+        </div>
+      </div>
+  </div>
+
+
+
+
+CHECK OUT CONTENT
+
+{PRODUCTS.map((product) => {
+  if (cartItems[product.id] !== 0 ){
+    return <Checkout data={product} />;
+  }
+})}
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+<div className='cart-item-container'>
+  {PRODUCTS.map((product) => {
+    if (cartItems[product.id] !== 0 ){
+      return <CartItem data={product} />;
+    }
+  })}
+</div>
