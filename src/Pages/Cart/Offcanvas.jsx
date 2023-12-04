@@ -15,7 +15,7 @@ function OffcanvasExample()  {
             <Offcanvas.Title>Title of our Application</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-            asdadasdas
+            
         </Offcanvas.Body>
     </Offcanvas>
     </div>

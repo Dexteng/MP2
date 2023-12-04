@@ -1,322 +1,226 @@
-import product1 from "./product_1.png";
-import product2 from "./product_2.png";
-import product4 from "./product_4.png";
-import product5 from "./product_5.png";
-import product6 from "./product_6.png";
-import product7 from "./product_7.png";
-import product8 from "./product_8.png";
-import product9 from "./product_9.png";
-import product10 from "./product_10.png";
-import product11 from "./product_11.png";
-import product12 from "./product_12.png";
-import product13 from "./product_13.png";
-import product14 from "./product_14.png";
-import product15 from "./product_15.png";
-import product16 from "./product_16.png";
-import product17 from "./product_17.png";
-import product18 from "./product_18.png";
-import product19 from "./product_19.png";
-import product20 from "./product_20.png";
-import product21 from "./product_21.png";
+import product1 from "./product1.png";
+import herobg1 from './herobg1.jpg'
+import Content1Img1 from './Content1Img1'
+import Content1Img2 from './Content1Img2'
+import Content1Img3 from './Content1Img3'
+
+import product2 from "./product2.png";
+import herobg2 from './herobg2.jpg'
+import Content2Img1 from './Content2Img1'
+import Content2Img2 from './Content2Img2'
+import Content2Img3 from './Content2Img3'
+
+import product3 from "./product3.png";
+import herobg3 from './herobg3.jpg'
+import Content3Img1 from './Content3Img1'
+import Content3Img2 from './Content3Img2'
+import Content3Img3 from './Content3Img3'
+
+import product4 from "./product3.png";
+import herobg4 from './herobg3.jpg'
+import Content4Img1 from './Content3Img1'
+import Content4Img2 from './Content3Img2'
+import Content4Img3 from './Content3Img3'
+
+import product5 from "./product5.png";
+import herobg5 from './herobg5.jpg'
+import Content5Img1 from './Content5Img1'
+import Content5Img2 from './Content5Img2'
+import Content5Img3 from './Content5Img3'
+
+import product6 from "./product6.png";
+import herobg6 from './herobg6.jpg'
+import Content6Img1 from './Content6Img1'
+import Content6Img2 from './Content6Img2'
+import Content6Img3 from './Content6Img3'
+
+import product7 from "./product7.png";
+import herobg7 from './herobg7.jpg'
+import Content7Img1 from './Content7Img1'
+import Content7Img2 from './Content7Img2'
+import Content7Img3 from './Content7Img3'
+
+
 export const PRODUCTS = [
     {
         id: 1,
-        name: ("Cool","One 3 Cosmic Blue"),
+        name: "One 3 Cosmic Blue",
         category: "Limited Edition",
         image: product1,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
+        heroDescription: 
+        "One 3 Cosmic Blue equipped with QUACK Mechanics to experience an extraordinary typing feel.",
+        price: 699,
+        hero: herobg1,
+
+        contentImg1: Content1Img1,
+        contentTitle1: "Authentic Acoustics",
+        contentDescription1: 
+        "A multi-layered padding design is present to spotlight raw acoustics from your switches of choice and reduce unwanted noise during use, Moreover a supplementary layer of EVA foam pad is located underneath the PCB to provide further improved sound reduction and the negation of any unwanted sounds."
+        ,
+
+        contentImg2: Content1Img2,
+        contentTitle2: "Detachable USB Type-C",
+        contentDescription2: "We use USB HID with the highest frequency of 1000Hz polling rate, meaning the keyboard is sending its input signal(s) to your PC 1000 times per second.",
+
+        contentImg3: Content1Img3,
+        contentTitle3: "Three keyboard angles",
+        contentDescription3: "Two-step keyboard feet allow you to set your keyboard at three different tilt angles.",
+
+        dark: 'yes'
     },
     {
         id: 2,
-        name: "One 3 Mini Mist Grey",
-        category: "Limited Edition",
+        name: "Ducky Origin Vintage",
+        category: "Latest",
         image: product2,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
+        heroDescription: 
+        "The Origin pays tribute to Ducky's roots, where it all began. Our aim was to journey back in time and capture the essence of the original typing experience while infusing it with new innovations.",
+        price: 799,
+        hero: herobg2,
+
+        contentImg1: Content2Img1,
+        contentTitle1: "Hot-swap & South-Facing Design",
+        contentDescription1: 
+        "The large keys support hot-swappable functionality, allowing easy replacement of preferred switches from ESC, Back Space, Enter, left Shift, right Shift, Space Bar, Numeric 0, +, and Enter. The south-facing switch design is compatible with most keycap products on the market, enabling the perfect customization of your keyboard."
+        ,
+
+        contentImg2: Content2Img2,
+        contentTitle2: "Classic Bezel Design",
+        contentDescription2: "The Ducky One Origin features a classic ultra-thin bezel design, which not only saves space but also maintains the overall simplicity and beauty of the keyboard design. The retro gray color scheme enhances the cleanliness and sophistication of the keyboard, elevating your work environment to a new level.",
+
+        contentImg3: Content2Img3,
+        contentTitle3: "PBT Double-Shot Keycaps",
+        contentDescription3: "The keycaps of the Ducky One Origin are made of high-quality PBT material, using two-tone molding technology to ensure a clear and durable font that won't fade. Moreover, the keycap's large key supports a hot-swappable feature that allows for easy replacement of different switches, providing a customizable typing experience.",
+
+        dark: 'yes'
     },
     {
         id: 3,
-        name: "Ducky Original Phantom Black",
+        name: "One 3 RGB TKL White",
         category: "Latest",
-        image: product4,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
+        image: product3,
+        heroDescription: 
+        "Brand new 'QUACK Mechanics' design philosophy in Pure White.",
+        price: 899,
+        hero: herobg3,
+
+        contentImg1: Content3Img1,
+        contentTitle1: "True。PBT",
+        contentDescription1: 
+        "QUACK Mechanics uses only the finest materials, our keycaps are made from true PBT. The seamless legends are formed through a double-shot technique where two plastics are molded together, allowing legends to never fade away even after multiple years of use. Finished with a frosted surface, and these keycaps are shine and stain-resistant, made for fast movements and non-stop use, all while maintaining their original look."
+        ,
+
+        contentImg2: Content3Img2,
+        contentTitle2: "Optimized Construction",
+        contentDescription2: "The weight distribution and lowered case height improve the keyboard’s overall stability and poise during the most rigorous of moments. Its front-to-back weight ratio is meticulously engineered to keep the keyboard in one unwavering position, essential for advanced gaming and typing.",
+
+        contentImg3: Content3Img3,
+        contentTitle3: "Authentic Acoustics",
+        contentDescription3: "A multi-layered padding design is present to spotlight raw acoustics from your switches of choice and reduce unwanted noise during use. Moreover, a supplementary layer of EVA foam pad is located underneath the PCB to provide further improved sound reduction and the negation of any unwanted sounds.",
+
+        dark: 'yes'
     },
     {
         id: 4,
-        name: "One 3 RGB TKL",
-        category: "Latest",
-        image: product5,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
+        name: "One 3 TKL DayBreak",
+        category: "HIGH CP",
+        image: product4,
+        heroDescription: 
+        "Ducky’s brand new QUACK Mechanics design philosophy to further elevate our already prominent attributes.",
+        price: 899,
+        hero: herobg4,
+
+        contentImg1: Content4Img1,
+        contentTitle1: "True。PBT",
+        contentDescription1: 
+        "QUACK Mechanics uses only the finest materials, our keycaps are made from true PBT. The seamless legends are formed through a double-shot technique where two plastics are molded together, allowing legends to never fade away even after multiple years of use. Finished with a frosted surface, and these keycaps are shine and stain-resistant, made for fast movements and non-stop use, all while maintaining their original look."
+        ,
+
+        contentImg2: Content4Img2,
+        contentTitle2: "Optimized Construction",
+        contentDescription2: "The weight distribution and lowered case height improve the keyboard’s overall stability and poise during the most rigorous of moments. Its front-to-back weight ratio is meticulously engineered to keep the keyboard in one unwavering position, essential for advanced gaming and typing.",
+
+        contentImg3: Content4Img3,
+        contentTitle3: "Authentic Acoustics",
+        contentDescription3: "A multi-layered padding design is present to spotlight raw acoustics from your switches of choice and reduce unwanted noise during use. Moreover, a supplementary layer of EVA foam pad is located underneath the PCB to provide further improved sound reduction and the negation of any unwanted sounds.",
+
+        dark: 'yes'
     },
     {
         id: 5,
-        name: "One 3 RGB",
-        category: "Latest",
-        image: product6,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
+        name: "One 3 RGB TKL White",
+        category: "HIGH CP",
+        image: product5,
+        heroDescription: 
+        "Ducky’s brand new QUACK Mechanics design philosophy to further elevate our already prominent attributes.",
+        price: 899,
+        hero: herobg5,
+
+        contentImg1: Content5Img1,
+        contentTitle1: "True。PBT",
+        contentDescription1: 
+        "QUACK Mechanics uses only the finest materials, our keycaps are made from true PBT. The seamless legends are formed through a double-shot technique where two plastics are molded together, allowing legends to never fade away even after multiple years of use. Finished with a frosted surface, and these keycaps are shine and stain-resistant, made for fast movements and non-stop use, all while maintaining their original look."
+        ,
+
+        contentImg2: Content5Img2,
+        contentTitle2: "Optimized Construction",
+        contentDescription2: "The weight distribution and lowered case height improve the keyboard’s overall stability and poise during the most rigorous of moments. Its front-to-back weight ratio is meticulously engineered to keep the keyboard in one unwavering position, essential for advanced gaming and typing.",
+
+        contentImg3: Content5Img3,
+        contentTitle3: "Authentic Acoustics",
+        contentDescription3: "A multi-layered padding design is present to spotlight raw acoustics from your switches of choice and reduce unwanted noise during use. Moreover, a supplementary layer of EVA foam pad is located underneath the PCB to provide further improved sound reduction and the negation of any unwanted sounds.",
+
+        dark: 'yes'
     },
     {
         id: 6,
-        name: "One 3 Mini White",
-        category: "Latest",
-        image: product7,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
+        name: "Creator Mecha Mini",
+        category: "Limted Edition",
+        image: product6,
+        heroDescription: 
+        "Purple vibes, Creator spirits",
+        price: 699,
+        hero: herobg6,
+
+        contentImg1: Content6Img1,
+        contentTitle1: "Full aluminum casing",
+        contentDescription1: 
+        "The new bezel design shares a similar sleek frame as its predecessor.",
+
+        contentImg2: Content6Img2,
+        contentTitle2: "Durable exceptional reliable performance",
+        contentDescription2: "PBT double-shot seamless pudding keycaps German Cherry MX key switches",
+
+        contentImg3: Content6Img3,
+        contentTitle3: "Detachable USB Type-C",
+        contentDescription3: "We use USB HID with the highest frequency of 1000Hz polling rate, meaning the keyboard is sending its input signal(s) to your PC 1000 times per second.",
+
+        dark: 'yes'
     },
     {
         id: 7,
-        name: "One 3 RGB TKL White",
-        category: "Latest",
-        image: product8,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
+        name: "Mecha Llama",
+        category: "Limted Edition",
+        image: product7,
+        heroDescription: 
+        "Dual color bezels to match all varieties of keycap colorways Features Cherry MX key switches",
+        price: 699,
+        hero: herobg7,
+
+        contentImg1: Content7Img1,
+        contentTitle1: "Full aluminum casing",
+        contentDescription1: 
+        "The new bezel design shares a similar sleek frame as its predecessor.",
+
+        contentImg2: Content7Img2,
+        contentTitle2: "Durable exceptional reliable performance",
+        contentDescription2: "PBT double-shot seamless pudding keycaps German Cherry MX key switches",
+
+        contentImg3: Content7Img3,
+        contentTitle3: "Detachable USB Type-C",
+        contentDescription3: "We use USB HID with the highest frequency of 1000Hz polling rate, meaning the keyboard is sending its input signal(s) to your PC 1000 times per second.",
+
+        dark: 'yes'
     },
-    {
-        id: 8,
-        name: "One 3 RGB White",
-        category: "Latest",
-        image: product9,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 9,
-        name: "One 3 SF Aura",
-        category: "Latest",
-        image: product10,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 10,
-        name: "One 3 Aura",
-        category: "Latest",
-        image: product11,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 11,
-        name: "One 2 Pro Mini",
-        category: "HIGH CP",
-        image: product12,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 12,
-        name: "One 3 KTL Cosmic Blue",
-        category: "Limited Edition",
-        image: product13,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 13,
-        name: "One 3 Mist Grey",
-        category: "Limited Edition",
-        image: product14,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 14,
-        name: "One 3 KTL Mist Grey",
-        category: "Limited Edition",
-        image: product15,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 15,
-        name: "One 3 Mini Cosmic Blue",
-        category: "Limited Edtion",
-        image: product16,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 16,
-        name: "One 3 Yellow Ducky",
-        category: "HIGH CP",
-        image: product17,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 17,
-        name: "One 3 DayBreak",
-        category: "HIGH CP",
-        image: product18,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 18,
-        name: "One 3 KTL Matcha",
-        category: "HIGH CP",
-        image: product19,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 19,
-        name: "One 3 Fuji",
-        category: "HIGH CP",
-        image: product20,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-    {
-        id: 20,
-        name: "One 3 SF DayBreak",
-        category: "HIGH CP",
-        image: product21,
-        price: 100,
-        heroImg: "Hero Image",
-        heroText: "Hero Text",
-        description1: "Description1",
-        description1Img: "Image1",
-        description2: "Description2",
-        description2Img: "Image2",
-        description3: "Description3",
-        description3Img: "Image3"
-    },
-]
+    
+]   
