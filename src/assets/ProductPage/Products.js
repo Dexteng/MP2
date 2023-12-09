@@ -1,44 +1,44 @@
 import product1 from "./product1.png";
 import herobg1 from './herobg1.jpg'
-import Content1Img1 from './Content1Img1'
-import Content1Img2 from './Content1Img2'
-import Content1Img3 from './Content1Img3'
+import Content1Img1 from './Content1Img1.jpg'
+import Content1Img2 from './Content1Img2.jpg'
+import Content1Img3 from './Content1Img3.jpg'
 
 import product2 from "./product2.png";
 import herobg2 from './herobg2.jpg'
-import Content2Img1 from './Content2Img1'
-import Content2Img2 from './Content2Img2'
-import Content2Img3 from './Content2Img3'
+import Content2Img1 from './Content2Img1.jpg'
+import Content2Img2 from './Content2Img2.jpg'
+import Content2Img3 from './Content2Img3.jpg'
 
 import product3 from "./product3.png";
 import herobg3 from './herobg3.jpg'
-import Content3Img1 from './Content3Img1'
-import Content3Img2 from './Content3Img2'
-import Content3Img3 from './Content3Img3'
+import Content3Img1 from './Content3Img1.jpg'
+import Content3Img2 from './Content3Img2.jpg'
+import Content3Img3 from './Content3Img3.jpg'
 
 import product4 from "./product3.png";
 import herobg4 from './herobg3.jpg'
-import Content4Img1 from './Content3Img1'
-import Content4Img2 from './Content3Img2'
-import Content4Img3 from './Content3Img3'
+import Content4Img1 from './Content3Img1.jpg'
+import Content4Img2 from './Content3Img2.jpg'
+import Content4Img3 from './Content3Img3.jpg'
 
 import product5 from "./product5.png";
 import herobg5 from './herobg5.jpg'
-import Content5Img1 from './Content5Img1'
-import Content5Img2 from './Content5Img2'
-import Content5Img3 from './Content5Img3'
+import Content5Img1 from './Content5Img1.jpg'
+import Content5Img2 from './Content5Img2.jpg'
+import Content5Img3 from './Content5Img3.jpg'
 
 import product6 from "./product6.png";
 import herobg6 from './herobg6.jpg'
-import Content6Img1 from './Content6Img1'
-import Content6Img2 from './Content6Img2'
-import Content6Img3 from './Content6Img3'
+import Content6Img1 from './Content6Img1.jpg'
+import Content6Img2 from './Content6Img2.jpg'
+import Content6Img3 from './Content6Img3.jpg'
 
 import product7 from "./product7.png";
 import herobg7 from './herobg7.jpg'
-import Content7Img1 from './Content7Img1'
-import Content7Img2 from './Content7Img2'
-import Content7Img3 from './Content7Img3'
+import Content7Img1 from './Content7Img1.jpg'
+import Content7Img2 from './Content7Img2.jpg'
+import Content7Img3 from './Content7Img3.jpg'
 
 
 export const PRODUCTS = [

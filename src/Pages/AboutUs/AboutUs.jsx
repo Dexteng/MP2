@@ -1,8 +1,10 @@
 import React from 'react'
 import './AboutUs.css'
+import Aos from 'aos'
 import 'aos/dist/aos.css'
-import Nav from '../../Components/Nav'
-import Footer from '../../Components/Footer'
+import { useEffect } from 'react'
+import Nav from '../../Components/Nav.jsx'
+import Footer from '../../Components/Footer.jsx'
 import abthero from '../../assets/AboutUsPage/abt-hero.png'
 import herovid from '../../assets/AboutUsPage/hero.mp4'
 import razer from '../../assets/AboutUsPage/razer.png'
@@ -11,6 +13,11 @@ import hyperx from '../../assets/AboutUsPage/hyperx.png'
 
 
 function AboutUs() {
+
+    useEffect(()=> {
+        Aos.init({duration: 2000})
+    },[])
+
     return (
     <>
     <Nav/>
@@ -44,7 +51,7 @@ function AboutUs() {
                         Keebs keyboard
                     </p>
                     <p className='subtext'>
-                    Based in Philippines, Keebs founded its own brand in 2008 and became a manufacturing company that has strived to provide users with mechanical keyboards of the highest standard since day one. Fast forward to now, we are one of the top mechanical keyboard manufacturers in the Philippines and have built a reputation for providing products that are innovative, performance oriented and solidly built. Our ultimate goal is to have our logo be synonymous with excellence and product satisfaction. 
+                    Based in Philippines, Keebs founded its own brand in 2008 and became a manufacturing company that has strived to provide users with mechanical keyboards of the highest standard since day one.
                     </p>
                     <br />
                     <p className='subtext'>

@@ -8,7 +8,7 @@ import Nav from './Components/Nav.jsx';
 import { Wishlist } from './Pages/Wishlist/Wishlist.jsx';
 import AboutUs from './Pages/AboutUs/AboutUs.jsx'
 import { Register } from './Pages/Login/Register.jsx';
-import { Login } from './Pages/Login/Login.jsx';
+import  Login  from './Pages/Login/Login.jsx';
 import { SeeMore } from './Pages/SeeMore/SeeMore.jsx';
 
 
@@ -18,7 +18,6 @@ function App() {
       <div className='App'>
       <ProductContextProvider>
         <Router>
-          <Nav />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/products" element={<Products />}/>

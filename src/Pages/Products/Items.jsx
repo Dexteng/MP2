@@ -12,6 +12,7 @@ export const Items = (props) => {
     const{id, name, category, image, price} = props.data;
     const {addToCart, cartItems, addToWishList, wishItems,seeMore} = useContext(ProductContext)
     const cartAmount = cartItems[id]
+    
 
   return  <div className='items'>
             <div className='items-display'>

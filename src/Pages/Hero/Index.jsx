@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import './Index.css'
 import './Hero1.css'
 import './Hero2.css'
 import './BestSeller.css'
@@ -14,6 +13,7 @@ import { EffectFade, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modu
 import 'swiper/css'
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import hero1 from '../../assets/HeroPage/hero1.jpg'
 import hero2 from '../../assets/HeroPage/hero2.jpg'
 import hero3 from '../../assets/HeroPage/hero3.jpg'
@@ -35,6 +35,7 @@ import profile1 from '../../assets/HeroPage/profile1.jpg'
 import profile2 from '../../assets/HeroPage/profile2.jpg'
 import profile3 from '../../assets/HeroPage/profile3.jpg'
 import profile4 from '../../assets/HeroPage/profile4.jpg'
+import Nav from '../../Components/Nav.jsx'
 
 
 
@@ -49,6 +50,8 @@ function Index() {
 
     return (
         <div className=''>
+
+            <Nav />
         
 
         {/*HERO1 */}
