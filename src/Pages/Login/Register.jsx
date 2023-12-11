@@ -3,6 +3,9 @@ import { faCheck,faTimes,faInfoCircle } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from 'react-router-dom' 
 import './Register-Login.css'
+import { IoPersonSharp } from "react-icons/io5"
+import { FaLock } from "react-icons/fa6";
+import register from '../../assets/register.png'
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{7,15}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*).{8,16}$/;
@@ -65,22 +68,19 @@ export const Register = () => {
     }
 
   return (
-    <>
+    <div className="reg-page">
     {success ? (
-        <section>
-            <h1>Success</h1>
-            <p>
-            <Link to='/login'>Sign in</Link>
-            </p>
-        </section>
+        window.location.href = '/login'
     ) : (
-    <section>
-        <p ref={errRef} className={errMsg ? "errMsg" :
-        "offscreen"} aria-live="assertive">{errMsg}</p>
-        <h1>Register</h1>
+<div className="reg">
+    <img src={register} alt="" />
+    <section className="register">
         <form onSubmit={handleSubmit}>
+            <p className="heading">Register</p>
+            <p ref={errRef} className={errMsg ? "errMsg" :
+            "offscreen"} aria-live="assertive">{errMsg}</p>
             <label htmlFor="username">
-                Username:
+                <IoPersonSharp /> Username:
                 <span className={validName ? "valid" : "hide"}>
                     <FontAwesomeIcon icon={faCheck} />
                 </span>
@@ -108,7 +108,7 @@ export const Register = () => {
                 Letters, Number, Underscores, Hyphens Allowed.
             </p>
             <label htmlFor="password">
-                Password:
+                <FaLock />Password:
                 <span className={validPwd ? "valid" : "hide"}>
                     <FontAwesomeIcon icon={faCheck} />
                 </span>
@@ -133,7 +133,7 @@ export const Register = () => {
             </p>
 
             <label htmlFor="confirm_pwd">
-                Confirm Password:
+                <FaLock />Confirm Password:
                 <span className={validMatch && matchPwd ? "valid" : "hide"}>
                     <FontAwesomeIcon icon={faCheck} />
                 </span>
@@ -158,15 +158,17 @@ export const Register = () => {
                 Must match th first password input field.               
             </p>
             <button disabled={!validName || !validPwd || !validMatch ? true : false}>Register</button>
+            <div className="bottom">
+                <p> Already registered? </p>
+                <span className="line">
+                    <Link to='/login'>Sign in</Link>
+                </span>
+            </div>
         </form>
-        <p>
-            Already registered? <br />
-            <span className="line">
-            <Link to='/login'>Sign in</Link>
-            </span>
-        </p>
+        
     </section>
+</div>
     )}
-    </>
+    </div>
   )
 }

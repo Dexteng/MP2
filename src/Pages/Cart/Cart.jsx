@@ -73,6 +73,18 @@ import './Modal.css'
                     }
                     })}
                     </div>
+                    
+                    <div className='payments'>
+                        <p className='heading'>Payment Option:</p>
+                        <div className='payments container'>
+                            <select className='dropdown'>
+                            <option value="Gcash">Gcash</option>
+                            <option value="Paymaya">Paymaya</option>
+                            <option value="BDO">BDO</option>
+                            <option value="Cash on Delivery">Cash on Delivery</option>
+                            </select>
+                        </div>
+                    </div>
                 
                     <div className='totals'>
                         <p>Subtotal: ₱{totalAmount}</p>
